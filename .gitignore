@@ -1,0 +1,4 @@
+# .gitignore ，git 提交时，忽略文件配置
+# node_modules 内容比较多，一般都是忽略提交
+# node_modules
+03-其他

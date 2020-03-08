@@ -7,7 +7,7 @@ const app = http.createServer();
 app.on('request', (request, response) => {
     // 从<请求报文>中获取请求方式和请求地址
     const { method, url } = request;
-
+    console.log('请求方式和请求地址', method, url);
     // 通过 response.setHeader() 给响应报文添加内容
     response.setHeader('Content-Type', 'text/html;charset=utf-8');
     // 通过<响应报文>回给客户端内容
