@@ -6,11 +6,12 @@ const app = http.createServer();
 // 注意：这里是一个事件，事件需要触发才会运行对应的事件处理函数。
 // 通过谁触发？客户端(浏览器)
 app.on('request', (request, response) => {
+    debugger;
     // request 请求报文(对象)
     const { method, url } = request;
     console.log('浏览器的请求方式和请求地址', method, url);
     // response 响应报文(对象)
-    response.end('Success666');
+    response.end('Success666');  // 断点调试要把这行代码执行完毕后，客户端才有内容。
 });
 // 4. 监听端口
 app.listen(4399, () => {
